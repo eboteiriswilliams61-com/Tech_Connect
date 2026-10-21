@@ -1,0 +1,35 @@
+.login-layout {
+    min-height: 590px;
+}
+
+.login-form-panel {
+    width: 100%;
+    max-width: 620px;
+    justify-self: center;
+}
+
+.login-form {
+    gap: 19px;
+}
+
+.form-switch {
+    margin: -3px 0 0;
+    color: var(--muted);
+    font-size: 11px;
+    text-align: center;
+}
+
+.form-switch a {
+    color: var(--blue-dark);
+    font-weight: 750;
+}
+
+@media (max-width: 850px) {
+    .login-layout {
+        min-height: 0;
+    }
+
+    .login-form-panel {
+        max-width: none;
+    }
+}

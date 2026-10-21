@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sign in to your Tech Connect account to manage home-service requests or technician work.">
+    <title>Sign in | Tech Connect</title>
+    <link rel="stylesheet" href="../assets/css/register.css">
+    <link rel="stylesheet" href="../assets/css/login.css">
+</head>
+<body>
+    <header class="register-header">
+        <a class="brand" href="Home.html" aria-label="Tech Connect home">
+            <span class="brand-mark" aria-hidden="true">TC</span>
+            <span>Tech<span class="brand-accent">Connect</span></span>
+        </a>
+        <p>New to Tech Connect? <a href="register.html">Create an account</a></p>
+    </header>
+
+    <main class="register-layout login-layout">
+        <section class="welcome-panel" aria-labelledby="welcome-title">
+            <p class="eyebrow"><span></span> Welcome back</p>
+            <h1 id="welcome-title">Your next step starts with the <span>right connection.</span></h1>
+            <p class="welcome-copy">Sign in to pick up where you left off, whether you’re looking for home-service help or managing your work as a technician.</p>
+
+            <div class="welcome-points">
+                <p><span aria-hidden="true">✓</span> Keep your service activity together</p>
+                <p><span aria-hidden="true">✓</span> Stay connected to your next steps</p>
+                <p><span aria-hidden="true">✓</span> Find support when you need it</p>
+            </div>
+
+            <div class="welcome-note">
+                <span class="note-mark" aria-hidden="true">TC</span>
+                <p><strong>People first. Practical help.</strong><br>Good to have you back.</p>
+            </div>
+            <span class="panel-decoration" aria-hidden="true">TC.</span>
+        </section>
+
+        <section class="form-panel login-form-panel" aria-labelledby="form-title">
+            <div class="form-heading">
+                <p class="form-kicker">Your Tech Connect account</p>
+                <h2 id="form-title">Sign in to your account</h2>
+                <p>Enter your email and password to continue.</p>
+            </div>
+
+            <form class="register-form login-form" id="login-form" method="post">
+                <div class="form-field">
+                    <label for="email">Email address</label>
+                    <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="password">Password</label>
+                    <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Enter your password" required>
+                </div>
+
+                <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+                <button class="submit-button" type="submit">Sign in <span aria-hidden="true">→</span></button>
+                <p class="form-switch">Don’t have an account? <a href="register.html">Create one</a></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="register-footer">
+        <span>© Tech Connect</span>
+        <a href="about.html">About Tech Connect</a>
+        <a href="contact.html">Get support</a>
+    </footer>
+    <script src="../assets/js/login.js"></script>
+</body>
+</html>
