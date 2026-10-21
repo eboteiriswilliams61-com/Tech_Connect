@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Create your Tech Connect account to find home-service help or connect with customers as a technician.">
+    <title>Create an account | Tech Connect</title>
+    <link rel="stylesheet" href="../assets/css/register.css">
+</head>
+<body>
+    <header class="register-header">
+        <a class="brand" href="Home.html" aria-label="Tech Connect home">
+            <span class="brand-mark" aria-hidden="true">TC</span>
+            <span>Tech<span class="brand-accent">Connect</span></span>
+        </a>
+        <p>Already have an account? <a href="login.html">Sign in</a></p>
+    </header>
+
+    <main class="register-layout">
+        <section class="welcome-panel" aria-labelledby="welcome-title">
+            <p class="eyebrow"><span></span> Get started with Tech Connect</p>
+            <h1 id="welcome-title">Good work starts with the <span>right connection.</span></h1>
+            <p class="welcome-copy">Create an account to find practical help for your home or connect your skills with customers who need them.</p>
+
+            <div class="welcome-points">
+                <p><span aria-hidden="true">✓</span> A clear place to manage your services</p>
+                <p><span aria-hidden="true">✓</span> Connections built around real needs</p>
+                <p><span aria-hidden="true">✓</span> A simpler way to get started</p>
+            </div>
+
+            <div class="welcome-note">
+                <span class="note-mark" aria-hidden="true">TC</span>
+                <p><strong>People first. Practical help.</strong><br>Here to make home services easier.</p>
+            </div>
+            <span class="panel-decoration" aria-hidden="true">TC.</span>
+        </section>
+
+        <section class="form-panel" aria-labelledby="form-title">
+            <div class="form-heading">
+                <p class="form-kicker">Your Tech Connect account</p>
+                <h2 id="form-title">Create your account</h2>
+                <p>Tell us a little about yourself to get started.</p>
+            </div>
+
+            <form class="register-form" id="register-form" method="post">
+                <fieldset class="account-type">
+                    <legend>I’m joining as a</legend>
+                    <div class="account-type-options">
+                        <label class="account-type-option">
+                            <input type="radio" name="account-type" value="customer" checked>
+                            <span class="option-mark" aria-hidden="true">⌂</span>
+                            <span><strong>Customer</strong><small>I need help with a job</small></span>
+                        </label>
+                        <label class="account-type-option">
+                            <input type="radio" name="account-type" value="technician">
+                            <span class="option-mark" aria-hidden="true">⚒</span>
+                            <span><strong>Technician</strong><small>I provide services</small></span>
+                        </label>
+                    </div>
+                </fieldset>
+
+                <div class="field-row">
+                    <div class="form-field">
+                        <label for="full-name">Full name</label>
+                        <input id="full-name" name="full-name" type="text" autocomplete="name" placeholder="e.g. Alex M." required>
+                    </div>
+                    <div class="form-field">
+                        <label for="phone">Phone number</label>
+                        <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+237 6XX XXX XXX" required>
+                    </div>
+                </div>
+
+                <div class="form-field">
+                    <label for="email">Email address</label>
+                    <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+                </div>
+
+                <div class="form-field technician-field" id="technician-field" hidden>
+                    <label for="specialty">Primary service category</label>
+                    <select id="specialty" name="specialty" disabled>
+                        <option value="">Choose your specialty</option>
+                        <option value="electrical">Electrical</option>
+                        <option value="plumbing">Plumbing</option>
+                        <option value="ac-refrigeration">AC &amp; refrigeration</option>
+                        <option value="carpentry">Carpentry</option>
+                        <option value="painting-finishing">Painting &amp; finishing</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="field-row">
+                    <div class="form-field">
+                        <label for="password">Password</label>
+                        <input id="password" name="password" type="password" autocomplete="new-password" placeholder="At least 8 characters" minlength="8" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="confirm-password">Confirm password</label>
+                        <input id="confirm-password" name="confirm-password" type="password" autocomplete="new-password" placeholder="Enter it again" minlength="8" required>
+                    </div>
+                </div>
+
+                <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+                <button class="submit-button" type="submit">Create account <span aria-hidden="true">→</span></button>
+                <p class="form-footnote">Your account details help connect you with the right Tech Connect services.</p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="register-footer">
+        <span>© Tech Connect</span>
+        <a href="about.html">About Tech Connect</a>
+        <a href="contact.html">Get support</a>
+    </footer>
+    <script src="../assets/js/register.js"></script>
+</body>
+</html>
